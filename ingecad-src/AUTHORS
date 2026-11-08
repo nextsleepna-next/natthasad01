@@ -1,0 +1,34 @@
+IngeCAD is written and maintained by:
+
+  Marco Sumari Tellez <ing.sumari@gmail.com>  — author, copyright holder
+
+With contributions from (Help ▸ About IngeCAD rolls the same list):
+
+  Rafael García Rodríguez — draftsman and reviewer: filmed reviews of the
+      whole program and the drafting standards behind its dimensions,
+      annotative scales and plotting. https://youtube.com/@Rafa3D
+  Arthur Emmanuel de Medeiros Nóbrega — reports and requests from daily
+      drafting: plotting, layouts, layers, grips, text styles and
+      justification, copying between drawings (#57, #60-#64, #75, #77).
+  Michal Josef Špaček — Czech translation; the first reports on
+      translations and keyboard shortcuts (#3, #4).
+  Yann Steffan — French translation (#54).
+  John Donovan — any map projection: georeferencing by EPSG with PROJ (#27).
+  Riccardo Gagliarducci — the polyline OFFSET report (#58).
+  batoceragaming — the Window plot area (#52) and the AppImage (#55).
+  javierrondont — DXF export (#51).
+  Arq. Fernando Pablo Bellocchio (archibello) — GeoCad Yaguareté, the
+      IngeCAD↔QGIS plug-in whose patches found a dozen faults of ours;
+      the ghost dimension fix (#108, #109).
+  Phornjed Ph. (buildsmart888) — the AI assistant and MCP bridge proposal
+      the built-in assistant grew from (#59).
+  Orian Beltrame (orianbsilva) — the test suite on Windows; templates
+      that stay in metres (#93, #94).
+  JMArts Design (jmartsdesign) — Portuguese (Portugal) translation (#56).
+  Henrique Enzweiler (riqueenz) — Portuguese (Brazil) translation (#92).
+  ultracat — Korean translation (#113).
+  Uthopik — the construction lines that ended at the edge of the screen (#98, #104).
+  stephenboullion — asked for toolbars that stay hidden (#107).
+  Jozsef — the AppImage that would not start (#20).
+
+And thanks to everyone who tries IngeCAD and reports what they find.

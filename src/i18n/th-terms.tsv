@@ -1,0 +1,120 @@
+# Yotathai 3D — ตารางศัพท์ไทย (Thai term glossary)  ·  แก้ที่นี่ที่เดียว
+#
+# คอลัมน์ (คั่นด้วย Tab): English key <TAB> mode <TAB> Thai <TAB> note
+#   English key = ข้อความต้นฉบับใน tr("…") ตรงทุกตัวอักษร (รวม … และช่องว่าง)
+#   mode:
+#     pair  = แสดง "ไทย (English)" เมื่อเปิดตัวเลือก ภาษา ▸ แสดงชื่ออังกฤษคู่ไทย (ค่าเริ่มต้น = เปิด)
+#             ปิดตัวเลือกแล้วเหลือแต่ไทย · ป้ายใต้ไอคอนแถบเครื่องมือพื้นฐานแสดงไทยอย่างเดียวเสมอ
+#     thai  = ไทยอย่างเดียว (คำทั่วไป หรือคำที่เป็นทับศัพท์อยู่แล้ว)
+#     keep  = ใช้ภาษาอังกฤษตามต้นฉบับ (ชื่อเฉพาะ ศัพท์ที่วงการพูดเป็นอังกฤษ)
+#   Thai = คำไทยที่ใช้ (แทนค่าใน th.json) · เว้นว่างได้เมื่อ mode = keep
+#
+# กติกาเลือก mode (คุณช่างถึก 18 ต.ค. 2569):
+#   คำทั่วไป (ไฟล์ บันทึก ยกเลิก) → thai · ชื่อเครื่องมือ/ศัพท์ CAD ที่คนดูคลิปสอนเป็นภาษาอังกฤษ → pair
+#   ทับศัพท์อยู่แล้ว (คอมโพเนนต์ เลเยอร์ ซูม) → thai · หน่วย ชื่อไฟล์ ยี่ห้อ → ไม่ใส่ตารางนี้ (ไม่แปลอยู่แล้ว)
+# ระวังคำหลายความหมาย: key เดียวใช้ทุกที่ เช่น "Scale" = เครื่องมือย่อ/ขยาย และ "มาตราส่วน" ของแผ่นงาน
+#   "Solid" = ลายแรเงาทึบในแผ่นงาน (ไม่ใช่ทรงตัน) — จึงไม่แก้คำไทยของสองคำนี้
+
+# ---- เครื่องมือวาด ----
+Line	pair	เส้น
+Arc	pair	ส่วนโค้ง
+3-Point Arc	pair	ส่วนโค้ง 3 จุด
+Center Arc	pair	ส่วนโค้งจากจุดศูนย์กลาง
+Pie	pair	รูปพาย
+Rectangle	pair	สี่เหลี่ยม
+Rotated Rect	pair	สี่เหลี่ยมเอียง
+Circle	pair	วงกลม
+Polygon	pair	รูปหลายเหลี่ยม
+Freehand	pair	วาดอิสระ
+Path	pair	เส้นทาง
+Text	pair	ข้อความ
+3D Text…	pair	ข้อความ 3 มิติ…
+Dimension	pair	เส้นบอกขนาด
+Tape Measure	pair	เทปวัดระยะ
+Protractor	pair	วัดมุม
+Section Plane	pair	ระนาบตัด
+
+# ---- เครื่องมือแก้ไข ----
+Select	pair	เลือก
+Eraser	pair	ยางลบ
+Paint	pair	ระบายสี
+Move	pair	ย้าย
+Rotate	pair	หมุน
+Scale	pair	มาตราส่วน	key เดียวกับมาตราส่วนแผ่นงาน — คงคำไทยเดิม ให้ (Scale) ช่วยบอกว่าเป็นเครื่องมือย่อ/ขยาย
+Flip	pair	พลิก
+Push / Pull	pair	ดัน / ดึง
+Follow Me	pair	กวาดตามเส้น
+Offset	pair	ระยะขนาน
+Fillet 3D	pair	ลบมุมโค้ง 3 มิติ
+Outer Shell	pair	เปลือกนอก
+Intersect	pair	ส่วนที่ตัดกัน
+Union	pair	รวมรูปทรง
+Subtract	pair	ลบรูปทรง
+Trim	pair	ตัดเล็ม
+Split	pair	แยกชิ้น
+Intersect Faces	pair	ตัดหน้าที่ซ้อนกัน
+Reverse Faces	pair	กลับด้านหน้า
+Orient Faces	pair	จัดทิศหน้าให้ตรงกัน
+Make Group	pair	สร้างกลุ่ม
+Explode Group	pair	แยกกลุ่ม
+Join Segments	pair	รวมเส้นตรง
+Explode Curve	pair	แตกเส้นโค้ง
+Zoom Window	pair	ซูมกรอบ
+Make Unique	pair	แยกเป็นชิ้นเฉพาะ
+Make Component…	thai	สร้างคอมโพเนนต์…
+Replace Component…	thai	แทนที่คอมโพเนนต์…
+
+# ---- กล้องและการมอง ----
+Orbit	pair	หมุนรอบ
+Pan	pair	เลื่อนภาพ
+Zoom	thai	ซูม
+Zoom Extents	pair	ซูมดูทั้งหมด
+Zoom Selection	thai	ซูมไปที่ที่เลือก
+Position Camera	pair	ตั้งกล้อง
+Walk	pair	เดิน
+Look Around	pair	มองรอบ
+First Person	pair	มุมมองคนเดิน
+Perspective	pair	ทัศนียภาพ
+Two-Point Perspective	pair	ทัศนียภาพสองจุด
+Parallel Projection	pair	มุมมองขนาน
+Isometric	thai	ไอโซเมตริก
+X-ray	thai	เอกซเรย์
+Wireframe	pair	โครงลวด
+Hidden line	pair	เส้นซ่อน
+Shaded	thai	แรเงา
+Monochrome	thai	ขาวดำ
+Section Planes	pair	ระนาบตัด
+Section Cuts	pair	รอยตัด
+Section Fill	pair	ถมสีหน้าตัด
+Hidden Geometry	thai	เรขาคณิตที่ซ่อน
+Hidden Objects	thai	วัตถุที่ซ่อน
+Profiles	pair	เส้นรูปนอก
+
+# ---- แผงและเครื่องมือเสริม ----
+Sheet composer…	pair	จัดหน้าแบบ…
+Solid Inspector	pair	ตรวจทรงตัน
+Browser	pair	ตัวสำรวจโมเดล
+Model Info	thai	ข้อมูลโมเดล
+Render	thai	เรนเดอร์
+Simplify Mesh…	thai	ลดความละเอียดเมช…
+Units…	thai	หน่วย…
+BIM	keep
+AI	keep
+IFC (BIM)…	keep
+
+# ---- คำนามหลัก ----
+Component	thai	คอมโพเนนต์
+Components	thai	คอมโพเนนต์
+Group	thai	กลุ่ม
+Layer	thai	เลเยอร์
+Layers	thai	เลเยอร์
+Material	thai	วัสดุ
+Materials	thai	วัสดุ
+Scene	pair	ฉาก
+Scenes	pair	ฉาก
+Sheet	thai	แผ่นงาน
+Sheets	thai	แผ่นงาน
+Guides	thai	เส้นไกด์
+Faces	pair	หน้า
+Edges	pair	เส้นขอบ
+Solid	thai	ทึบ	key นี้คือลายแรเงาทึบในแผ่นงาน ไม่ใช่ทรงตัน (ทรงตันใช้คำว่า "ทรงตัน" ในประโยค)

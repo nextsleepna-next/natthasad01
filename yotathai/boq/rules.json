@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "purpose": "ชนิดวัตถุ IFC -> ปริมาณที่ใช้ -> รายการใน boq-catalog ที่เป็นไปได้ (ผู้ใช้เลือก ระบบไม่เลือกแทน)",
+    "catalog": "kit-v2/overlay/knowledge/ref-data/boq-db/boq-catalog.json",
+    "note": "ทางเลือกหน้างาน (วัสดุ ขนาด วิธีก่อสร้าง) ไม่ตัดสินแทนผู้ใช้ ตามกติกา CLAUDE.md"
+  },
+  "classes": {
+    "IfcWall": {
+      "quantity": [
+        "Qto_WallBaseQuantities",
+        "NetSideArea"
+      ],
+      "unit": "ตร.ม.",
+      "candidates": [
+        "1.2.3",
+        "1.2.4"
+      ],
+      "choice": "ชนิดผนัง (ก่ออิฐ / ผนังเบา) และความหนา"
+    },
+    "IfcSlab": {
+      "quantity": [
+        "Qto_SlabBaseQuantities",
+        "GrossVolume"
+      ],
+      "unit": "ลบ.ม.",
+      "candidates": [
+        "1.1.13",
+        "1.1.14",
+        "1.1.16"
+      ],
+      "choice": "พื้นหล่อในที่ / สำเร็จรูป / คอนกรีตผสมเสร็จ",
+      "warn_width_over_m": 0.3,
+      "warn_width_msg": "ความหนาเกิน 0.30 ม. อาจเป็นฐานยกพื้น/ดินถม ไม่ใช่แผ่นพื้น คสล. — ตรวจแบบก่อนนำปริมาตรไปคิดราคา"
+    },
+    "IfcRoof": {
+      "quantity": [
+        "Qto_RoofBaseQuantities",
+        "GrossArea"
+      ],
+      "unit": "ตร.ม.",
+      "candidates": [
+        "1.2.1"
+      ],
+      "choice": "วัสดุมุงและโครงหลังคา"
+    },
+    "IfcDoor": {
+      "quantity": [
+        "Qto_DoorBaseQuantities",
+        "Area"
+      ],
+      "unit": "ตร.ม.",
+      "candidates": [
+        "1.2.12"
+      ],
+      "choice": "ชนิดวัสดุและขนาดบาน"
+    },
+    "IfcWindow": {
+      "quantity": [
+        "Qto_WindowBaseQuantities",
+        "Area"
+      ],
+      "unit": "ตร.ม.",
+      "candidates": [
+        "1.2.12"
+      ],
+      "choice": "ชนิดวัสดุและขนาดบาน"
+    },
+    "IfcColumn": {
+      "quantity": [
+        "Qto_ColumnBaseQuantities",
+        "GrossVolume"
+      ],
+      "unit": "ลบ.ม.",
+      "candidates": [
+        "1.1.12",
+        "1.1.13"
+      ],
+      "choice": "คอนกรีตผสมเอง / ผสมเสร็จ และกำลังอัด"
+    },
+    "IfcBeam": {
+      "quantity": [
+        "Qto_BeamBaseQuantities",
+        "GrossVolume"
+      ],
+      "unit": "ลบ.ม.",
+      "candidates": [
+        "1.1.12",
+        "1.1.13"
+      ],
+      "choice": "คอนกรีตผสมเอง / ผสมเสร็จ และกำลังอัด"
+    },
+    "IfcFooting": {
+      "quantity": [
+        "Qto_FootingBaseQuantities",
+        "GrossVolume"
+      ],
+      "unit": "ลบ.ม.",
+      "candidates": [
+        "1.1.12",
+        "1.1.13"
+      ],
+      "choice": "คอนกรีตผสมเอง / ผสมเสร็จ และกำลังอัด"
+    },
+    "IfcPile": {
+      "measure": "count",
+      "quantity": [
+        "Qto_PileBaseQuantities",
+        "Length"
+      ],
+      "unit": "ต้น",
+      "candidates": [
+        "1.1.5",
+        "1.1.6"
+      ],
+      "choice": "เสาเข็มอัดแรงตอก / เข็มเจาะ ขนาดและความยาว"
+    },
+    "IfcStair": {
+      "quantity": [
+        "Qto_StairBaseQuantities",
+        "GrossArea"
+      ],
+      "unit": "ตร.ม.",
+      "candidates": [
+        "1.2.13"
+      ],
+      "choice": "วัสดุผิวบันได"
+    },
+    "IfcRailing": {
+      "quantity": [
+        "Qto_RailingBaseQuantities",
+        "Length"
+      ],
+      "unit": "ม.",
+      "candidates": [
+        "1.2.14"
+      ],
+      "choice": "ชนิดราว (ใช้เฉพาะราวบันได; ราวอื่นต้องเลือกเอง)",
+      "skip_piece_under_m": 0.1,
+      "skip_piece_msg": "ชิ้นสั้นกว่า 0.10 ม. (ลูกกรงรายต้น) ไม่นับเป็นความยาวราว",
+      "warn_msg": "ราวบนและราวล่างของแนวเดียวกันถูกนับเป็นคนละชิ้น ความยาวรวมอาจซ้ำ — เลือกนับเฉพาะราวบนของแต่ละแนวเอง"
+    },
+    "IfcCovering": {
+      "quantity": [
+        "Qto_CoveringBaseQuantities",
+        "NetArea"
+      ],
+      "unit": "ตร.ม.",
+      "candidates": [
+        "1.2.2",
+        "1.2.5",
+        "1.2.7"
+      ],
+      "choice": "ฝ้าเพดาน / ผิวผนัง / ผิวพื้น (ระบุตามตำแหน่งจริง)"
+    },
+    "IfcSpace": {
+      "ignore": "ห้อง/พื้นที่ใช้สอย ไม่ใช่รายการงานก่อสร้าง ใช้ตรวจกฎหมายและพื้นที่"
+    }
+  }
+}

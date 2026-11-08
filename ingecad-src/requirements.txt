@@ -1,0 +1,7 @@
+PySide6>=6.7
+ezdxf>=1.3
+numpy>=1.26
+Pillow>=10.0
+pyproj>=3.6
+pytest>=8.0
+mapbox_earcut>=1.0  # optional, compiled earcut: text/hatch fills ~10x faster (render/backend.py); the pure-Python fallback is ezdxf's
